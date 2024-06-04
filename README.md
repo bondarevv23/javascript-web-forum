@@ -1,7 +1,4 @@
-# Горюнов Александр М32021
-
-## Форум рыбаков - рыбач https://fishka.onrender.com
-
-Любители рыбалки могут общаться друг с другом, делится уловом и учавстовать в турнирах
+# Forum for fishermen
+## (backend service project in javascript)
 
 ![img.png](img.png)
