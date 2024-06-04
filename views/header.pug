@@ -1,0 +1,25 @@
+header.header
+    nav.header__nav
+        a.header__logo(href=`/index`)
+            img(src="/assets/img/logo.png", alt="Рыбач", title="Рыбач")
+        ul.header__menu
+            li.header__menu-item
+                a.header__menu-link(href=`/index`) Главная
+            li.header__menu-item
+                a.header__menu-link(href=`/articles`) Статьи
+            li.header__menu-item
+                a.header__menu-link(href=`/fish-places`) Места для ловли
+            li.header__menu-item
+                a.header__menu-link(href=`/table-page`) Список задач
+        ul.header__user-menu
+            if user
+                li.header__user-menu-item
+                    a.header__user-menu-link(href="/logout") Выйти
+                li.header__user-menu-item
+                    a.header__user-menu-link(href=`/user-page`)
+            else
+                li.header__user-menu-item
+                    a.header__user-menu-link(href="/login") Войти
+                li.header__user-menu-item
+                    a.header__user-menu-link(href="/register") Зарегистрироваться
+            li.emoji 🎣

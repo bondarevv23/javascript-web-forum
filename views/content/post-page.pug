@@ -1,0 +1,25 @@
+extends ../base
+
+block content
+    section.articles
+        //h1.main__heading Форум рыбаков №1 в мире
+        //article.articles__item
+        //    .articles__top
+        //        h2.articles__item-heading Отчет о рыбалке
+        //    .articles__item-info
+        //        a.articles__item-author(href='#') Виталий
+        //        time.articles__item-date(datetime='2023-09-30T19:54') 30 сентября 2023
+        //        ul.articles__item-tags
+        //            li.articles__item-tag Рассказ
+        //            li.articles__item-tag Отчет
+        //    h3.articles__item-subheading Рыбалка в Ростове
+        //    .articles__item-text
+        //        p.articles__item-content-paragraph
+        //            | Вечер добрый ! Сегодня после обеда стало скучно и решил пройтись к реке. Был в районе 29 линии. Ловил пару часов. Червь обычный, опарыш и в банке оставалось пару китайских червей. Собственно они и дали результат. Пелингас активен. А , забыл самое главное. Вчера был в низу, в Александровке. Сазан клюет как умолишенный. Но, если у вас крокодилы 2.10 или 2.40, то на экземпляр больше четырех кг не рассчитывайте. Не вытащите. Вчера срезало плетёнку. Обидно Всем хороших уловов.
+        //    .articles__item-images
+        //        img.articles__item-images-img(src='/assets/img/don-view.jpg', alt='фото с дона')
+        //        img.articles__item-images-img(src='/assets/img/pelengas.png', alt='пеленгас')
+    form.comment_form#commentForm
+        textarea(name="comment", rows="4", cols="50", placeholder="Оставьте ваш комментарий здесь...")
+        button(type="submit") Отправить комментарий
+    .comments

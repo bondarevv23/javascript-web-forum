@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="рыбалка форум рыба рыбач любители рыбалки">
+    <meta name="description" content="форум люителей рыбалки Рыбач">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="icon" href="assets/img/fishing-pole-and-fish.svg">
+    <script src="js/script.js"></script>
+    <script src="js/table.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<header class="header">
+    <nav class="header__nav">
+        <a href="index.html" class="header__logo">
+            <img src="assets/img/logo.png" alt="Рыбач" title="Рыбач"/>
+        </a>
+        <ul class="header__menu">
+            <li class="header__menu-item">
+                <a href="index.html" class="header__menu-link">Главная</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="articles.html" class="header__menu-link">Статьи</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="fish-places.html" class="header__menu-link">Места для ловли</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="table_page.html" class="header__menu-link">Список задач</a>
+            </li>
+        </ul>
+        <ul class="header__user-menu">
+            <li class="header__user-menu-item">
+                <a href="#" class="header__user-menu-link">Выйти</a>
+            </li>
+            <li class="header__user-menu-item">
+                <a href="user_page.html" class="header__user-menu-link">Личный кабинет</a>
+            </li>
+            <li class="emoji">🎣</li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+    <h1>Создать таблицу</h1>
+    <form id="task-form">
+        <label for="max-tasks">Максимальное количество задач на день:</label>
+        <input type="number" id="max-tasks" min="1" required>
+
+        <br><br>
+
+
+        <label for="new-task">Добавить новую задачу:</label>
+        <input type="text" id="new-task" required>
+        <input type="submit" value="Добавить">
+    </form>
+    <div class="main__table" >
+        <h2 class="main__table-title">Расписание</h2>
+        <div class="main__table-container" id="task-table">
+            <div class="main__table-container-table-header">
+                <div>Название задачи</div>
+                <div>Удалить</div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <span class="footer__load-time"></span>
+    <span class="footer__copyright">© 2023 «Рыбач»</span>
+    <a href="https://t.me/lifestailtg" class="footer__telegram-link">Telegram</a>
+</footer>
+</body>
+</html>

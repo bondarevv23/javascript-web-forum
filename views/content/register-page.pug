@@ -1,0 +1,16 @@
+extends ../base
+
+block content
+    h1 Регистрация
+    form.pretty_form#register-form
+        label(for="name") Имя:
+        input(type="text", id="name", name="name", required)
+        label(for="surname") Фамилия:
+        input(type="text", id="surname", name="surname", required)
+        label(for="email") Почта:
+        input(type="email", id="email", name="email", required)
+        label(for="password") Пароль:
+        input(type="password", id="password", name="password", required)
+        .error_message
+
+        button(type="submit") Зарегистрироваться

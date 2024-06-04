@@ -1,0 +1,46 @@
+extends ../base
+
+block content
+      form.pretty_form#post-form
+        label(for="title") Заголовок:
+        input(type="text", id="title", name="title", required)
+        label(for="subTitle") Подзаголовок:
+        input(type="text", id="subTitle", name="subTitle", required)
+        label(for="content") Содержание:
+        textarea(id="content", name="content", required)
+        label(for="photo") URL фотографии:
+        input(type="file", accept="image/png, image/gif, image/jpeg" id="photo")
+        label(for="tags") Теги:
+        input(type="text", id="tags", name="tags")
+        .error_message
+
+        button(type="submit") Создать пост
+      section.articles
+
+      .main__table
+        h2.main__table-title Дневник рыбака
+        .main__table-container
+          .main__table-container-table-header
+            div Название рыбы
+            div Вес
+            div Место
+            div Дата
+            div Наживка
+          .main__table-container-table-row
+            div Лосось
+            div 5 кг
+            div Река
+            div 2023-03-15
+            div Мясо
+          .main__table-container-table-row
+            div Форель
+            div 2 кг
+            div Озеро
+            div 2023-03-20
+            div Мушка
+          .main__table-container-table-row
+            div Форель
+            div 2 кг
+            div Озеро
+            div 2023-03-20
+            div Мушка

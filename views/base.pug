@@ -1,0 +1,27 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="keywords", content="рыбалка форум рыба рыбач любители рыбалки")
+        meta(name="description", content="форум любителей рыбалки Рыбач")
+        link(rel="stylesheet", href="/style/style.css")
+        link(rel="stylesheet", href="/style/normalize.css")
+        link(rel="icon", href="/assets/img/fishing-pole-and-fish.svg")
+        script(src='https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js')
+        script(src='https://www.gstatic.com/firebasejs/10.11.1/firebase-auth-compat.js')
+        script(src='/js/jquery-3.7.1.min.js')
+        script(src='/js/socket.io.min.js')
+        script(src="/js/script.js")
+        script(src="/js/firebase.js")
+        script(src='/js/articles.js')
+        script(src='/js/table.js')
+        script(src='/js/login.js')
+        script(src='/js/webclient.js')
+        title Рыбач
+    body
+        include header
+
+        main.main
+            block content
+
+        include footer

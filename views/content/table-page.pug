@@ -1,0 +1,18 @@
+extends ../base
+
+block content
+      h1 Создать таблицу
+      form#task-form
+        label(for='max-tasks') Максимальное количество задач на день:
+        input#max-tasks(type='number' min='1' required)
+        br
+        br
+        label(for='new-task') Добавить новую задачу:
+        input#new-task(type='text' required)
+        input(type='submit' value='Добавить')
+      .main__table
+        h2.main__table-title Расписание
+        .main__table-container#task-table
+          .main__table-container-table-header
+            div Название задачи
+            div Удалить

@@ -1,0 +1,147 @@
+extends ../base
+
+block content
+    section.articles
+        //h1.main__heading Форум рыбаков №1 в мире
+        //article.articles__item
+        //    .articles__top
+        //        h2.articles__item-heading Секрет удачной рыбалки
+        //        .articles__item-info
+        //            a.articles__item-author(href='#') Михали
+        //            time.articles__item-date(datetime='2023-09-13T19:54')  13 сентября 2023
+        //            ul.articles__item-tags
+        //                li.articles__item-tag Советы
+        //                li.articles__item-tag Обучение
+        //                li.articles__item-tag Для начинающих
+        //        h3.articles__item-subheading Рыбалка для начинающих: советы и рекомендации
+        //    .articles__item-text
+        //        p.articles__item-content-paragraph
+        //            strong Рыбалка
+        //            |  - это увлекательное и расслабляющее хобби, но для новичков она может казаться сложной и запутанной. Вот несколько советов, которые помогут вам начать:
+        //        p.articles__item-content-paragraph
+        //            strong Выбор снасти
+        //            | : Для начала выберите простую снасть. Удилище и катушка средней ценовой категории подойдут для большинства видов рыбы.
+        //        p.articles__item-content-paragraph
+        //            strong Изучите место
+        //            | : Подготовьтесь заранее и изучите место для рыбалки. Узнайте, какие виды рыбы там водятся и какие приманки им нравятся.
+        //        p.articles__item-content-paragraph
+        //            strong Практика ловли
+        //            | : Начните с основных методов ловли, таких как мормышка, блесна или живца. Постепенно улучшайте свои навыки.
+        //        p.articles__item-content-paragraph
+        //            strong Знание правил
+        //            | : Позаботьтесь о знании местных правил и нормативов, чтобы избежать неприятных сюрпризов.
+        //article.articles__item
+        //    .articles__top
+        //        h2.articles__item-heading Отчет о рыбалке
+        //        .articles__item-info
+        //            a.articles__item-author(href='#') Виталий
+        //            time.articles__item-date(datetime='2023-09-30T19:54')  30 сентября 2023
+        //            ul.articles__item-tags
+        //                li.articles__item-tag Рассказ
+        //                li.articles__item-tag Отчет
+        //        h3.articles__item-subheading Рыбалка в Ростове
+        //    .articles__item-text
+        //        p.articles__item-content-paragraph.
+        //            Вечер добрый ! Сегодня после обеда стало скучно и решил пройтись к реке. Был в районе 29 линии. Ловил пару часов. Червь обычный, опарыш и в банке оставалось пару китайских червей. Собственно они и дали результат. Пелингас активен. А , забыл самое главное. Вчера был в низу, в Александровке. Сазан клюет как умолишенный. Но, если у вас крокодилы 2.10 или 2.40, то на экземпляр больше четырех кг не рассчитывайте. Не вытащите. Вчера срезало плетёнку. Обидно Всем хороших уловов.
+        //    .articles__item-images
+        //        img.articles__item-images-img(src='assets/img/don-view.jpg' alt='фото с дона')
+        //        img.articles__item-images-img(src='assets/img/pelengas.png' alt='пеленгас')
+        //article.articles__item
+        //    .articles__top
+        //        h2.articles__item-heading Отчет о рыбалке
+        //    .articles__item-info
+        //        a.articles__item-author(href='#') Виталий
+        //        time.articles__item-date(datetime='2023-09-30T19:54')  30 сентября 2023
+        //        ul.articles__item-tags
+        //            li.articles__item-tag Рассказ
+        //            li.articles__item-tag Отчет
+        //    h3.articles__item-subheading Рыбалка в Ростове
+        //    .articles__item-text
+        //        p.articles__item-content-paragraph.
+        //            Вечер добрый ! Сегодня после обеда стало скучно и решил пройтись к реке. Был в районе 29 линии. Ловил пару часов. Червь обычный, опарыш и в банке оставалось пару китайских червей. Собственно они и дали результат. Пелингас активен. А , забыл самое главное. Вчера был в низу, в Александровке. Сазан клюет как умолишенный. Но, если у вас крокодилы 2.10 или 2.40, то на экземпляр больше четырех кг не рассчитывайте. Не вытащите. Вчера срезало плетёнку. Обидно Всем хороших уловов.
+        //    .articles__item-images
+        //        img.articles__item-images-img(src='assets/img/don-view.jpg' alt='фото с дона')
+        //        img.articles__item-images-img(src='assets/img/pelengas.png' alt='пеленгас')
+    button#load-more-btn Загрузить еще
+    aside.aside
+        .aside__articles-rating
+            h2.aside__articles-heading Топ статей недели
+            ul.aside__articles-rating-list
+                li.aside__list-item
+                    a.aside__list-link(href='#') Рыбалка для начинающих: советы и рекомендации
+                li.aside__list-item
+                    a.aside__list-link(href='#') Как мы ловили пеленгаса
+                li.aside__list-item
+                    a.aside__list-link(href='#') Лучшие приманки для таранки
+        .aside__catch-of-week
+            h2.aside__articles-heading улов недели
+            .aside__catch-of-week-images
+                .aside__catch-of-week-images_image
+                    .aside__catch-of-week-images_image-title.
+                        Щука 5.5 кг
+                    img.aside__catch-of-week-images_image-img(src='assets/img/shkyka.png')
+                .aside__catch-of-week-images_image
+                    .aside__catch-of-week-images_image-title.
+                        Красный сазан
+                    img.aside__catch-of-week-images_image-img(src='assets/img/red-sazan.png')
+                .aside__catch-of-week-images_image
+                    .aside__catch-of-week-images_image-title.
+                        Молодой рыбак
+                    img.aside__catch-of-week-images_image-img(src='assets/img/catch.png')
+                .aside__catch-of-week-images_image
+                    .aside__catch-of-week-images_image-title.
+                        Ловили рыбу, а поймали рака
+                    img.aside__catch-of-week-images_image-img(src='assets/img/cancer.png')
+        .aside__daily-quote
+            h2.aside__articles-heading Поговорка дня
+            blockquote.others__blockquote
+                p
+                    em Рыба воняет с головы.
+                cite.others__blockquote-cite Туркменская народная
+    section.others
+        .others__ascii
+            pre.
+            |         ░░░░░░░░░░░░░░░░░░░░░░░░░
+            |         ░░░░░░░░▄▀▀▄░░░░░░░░░░░░░
+            |         ░░░░░░▄▀▒▒▒▒▀▄░░░░░░░░░░░
+            |         ░░░░░░░▀▌▒▒▐▀░░░░░░░░░░░░
+            |         ░▄███▀░◐░░░▌░░░░░░░░░░░░░░
+            |         ░░░▐▀▌░░░░░▐░░░░░░░░░░▄▀▀▀▄▄
+            |         ░░▐░░▐░░░░░▐░░░░░░░░░█░▄█▀
+            |         ░░▐▄▄▌░░░░░▐▄▄░░░░░░█░░▄▄▀▀▀▀▄
+            |         ░░░░░░▌░░░░▄▀▒▒▀▀▀▀▄▀░▄▀░▄▄▄▀▀
+            |         ░░░░▐░░░░▐▒▒▒▒▒▒▒▒▀▀▄░▀▄▄▄░▄
+            |         ░░░░▐░░░░▐▄▒▒▒▒▒▒▒▒▒▒▀▄
+            |         ░░░░░▀▄░░░░▀▄▒▒▒▒▒▒▒▒▒▒▀▄
+            |         ░░░░░░░▀▄▄░░░█▄▄▄▄▄▄▄▄▄▄▄▀▄
+            |         ░░░░░░░░░░▀▀▄▄▄▄▄▄▄▄▀▀░
+            |         ░░░░░░░░░░░░▌▌░▌▌░░░
+            |         ░░░░░░░░░░▄▄▌▌▄▌▌
+        code.others__code.
+            /* Переключение стилей */
+            outlinePanel.addEventListener('change', onOutlinePanelChoice);
+            function onOutlinePanelChoice(evt) {
+            const outlinelabel =
+            'https://rawcdn.githack.com/ArtMan-8/outline-prototype/5774cf08d7af2205446a93b345ec0a7bcd0546ed/css/outline-prototype-label.css';
+            const outlineSafe =
+            'https://rawcdn.githack.com/ArtMan-8/outline-prototype/5774cf08d7af2205446a93b345ec0a7bcd0546ed/css/outline-prototype-safe.css';
+            switch (evt.target.id) {
+            case 'labelsOn':
+            cssStyle.href = outlinelabel;
+            break;
+            case 'labelsOff':
+            cssStyle.href = outlineSafe;
+            break;
+            case 'outlineOff':
+            cssStyle.href = '';
+            break;
+            };
+            }
+        blockquote.others__blockquote
+            p
+                em There is no tomorrow! THERE IS NO TOMORROW! THERE IS NO TOMORROW!
+            cite.others__blockquote-cite Apollo Creed
+        p.others__equation
+            | e
+            sup ipi
+            |  + 1 = 0
